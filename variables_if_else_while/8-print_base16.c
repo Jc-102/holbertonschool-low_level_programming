@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/**\
+/**
  * main - prints numbers of 16 base
  *
  * Return: always 0

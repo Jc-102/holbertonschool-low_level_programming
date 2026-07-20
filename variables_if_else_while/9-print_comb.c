@@ -19,7 +19,7 @@ int main(void)
 			putchar(n + '0');
 			putchar(m + '0');
 			
-			if (n != 9 && m != 9)
+			if (n != 9 || m != 9)
 				c = ',';
 			else
 				c = '\n';

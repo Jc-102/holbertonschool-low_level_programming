@@ -10,7 +10,6 @@ int main(void)
 {
 	int n;
 	int m;
-	int c;
 
 	for (n = 0; n < 10; n++)
 	{
@@ -18,14 +17,8 @@ int main(void)
 		{
 			putchar(n + '0');
 			putchar(m + '0');
-			
+			putchar(n != 9 || m != 9 ? ',' : '\n');
 			if (n != 9 || m != 9)
-				c = ',';
-			else
-				c = '\n';
-			putchar(c);
-
-			if(n != 9 || m != 9)
 				putchar(' ');
 		}
 	}

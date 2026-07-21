@@ -3,7 +3,6 @@
 /**
  * _isupper - checks uppercase character
  * 
- *
  * Return: 1 if c is uppercase and 0 if not
  */
 

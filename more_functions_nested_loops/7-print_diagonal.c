@@ -10,9 +10,9 @@ void print_diagonal(int n)
 	int m;
 	int s;
 
-	for (m = 0; m < n; m++)
+	for (m = 0; m < n; m++)	
 	{
-		for (s = 0; s < m; s++);
+		for (s = 0; s < m; s++)
 		{
 			_putchar(' ');
 		}

@@ -8,28 +8,16 @@
  * Return: the natural square root of n, or -1 if n does not have a natural square root
  */
 
+int try_sqrt(int n, int i)
+{
+	if (i * i == n)
+		return (i);
+	if (i * i > n)
+		return (-1);
+	return (try_sqrt(n, i + 1));
+}
+
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	else
-	{
-		int i = 1;
-
-		while (i * i <= n)
-		{
-			if (i * i == n)
-			{
-				return (i);
-			}
-			i++;
-		}
-		return (-1);
-	}
+	return (try_sqrt(n, 0));
 }

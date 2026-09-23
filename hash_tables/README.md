@@ -1,0 +1,1 @@
+This directory contains hash table tasks
